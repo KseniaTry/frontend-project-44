@@ -6,3 +6,6 @@
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=KseniaTry_frontend-project-44)](https://sonarcloud.io/summary/new_code?id=KseniaTry_frontend-project-44)
 
 [![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=KseniaTry_frontend-project-44)
+
+
+Brain-even game: https://asciinema.org/a/ahPDkjrNThk6v5STFQRvRpFIu
