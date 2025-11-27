@@ -1,15 +1,13 @@
 import initGame from '../index.js'
 import { initGreeting } from '../cli.js'
-
-const getRandomInRange = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
+import { getRandomInRange } from '../util.js'
+import { MIN_RANDOM, MAX_RANDOM } from '../const.js'
 
 const isNumberEven = number => number % 2 === 0
 
 const answerCheck = expression => isNumberEven(expression) ? 'yes' : 'no'
 
-const getExpression = () => getRandomInRange(1, 100)
+const getExpression = () => getRandomInRange(MIN_RANDOM, MAX_RANDOM)
 
 const run = () => {
   initGreeting()

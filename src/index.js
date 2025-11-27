@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync'
 import { name } from '../src/cli.js'
-
-const QUESTIONS_COUNT = 3
+import { QUESTIONS_COUNT } from './const.js'
 
 const initGame = (getExpression, answerCheck) => {
   for (let i = 1; i <= QUESTIONS_COUNT; i += 1) {

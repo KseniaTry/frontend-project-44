@@ -1,12 +1,10 @@
 import initGame from '../index.js'
 import { initGreeting } from '../cli.js'
 import { create, all } from 'mathjs'
+import { getRandomInRange } from '../util.js'
+import { MIN_RANDOM, MAX_RANDOM } from '../const.js'
 
 const math = create(all)
-
-const getRandomInRange = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
 
 const getRandomOperation = () => {
   const operations = ['+', '-', '*']
@@ -15,8 +13,8 @@ const getRandomOperation = () => {
 }
 
 const getRandomExpression = () => {
-  const first = getRandomInRange(1, 100)
-  const second = getRandomInRange(1, 100)
+  const first = getRandomInRange(MIN_RANDOM, MAX_RANDOM)
+  const second = getRandomInRange(MIN_RANDOM, MAX_RANDOM)
   const operation = getRandomOperation()
   return `${first} ${operation} ${second}`
 }
