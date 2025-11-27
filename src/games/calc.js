@@ -1,4 +1,5 @@
 import initGame from '../index.js'
+import { initGreeting } from '../cli.js'
 import { create, all } from 'mathjs'
 
 const math = create(all)
@@ -23,8 +24,9 @@ const getRandomExpression = () => {
 const answerCheck = expression => math.evaluate(expression)
 
 const run = () => {
+  initGreeting()
   console.log('What is the result of the expression?')
   initGame(getRandomExpression, answerCheck)
 }
 
-export { run }
+export default run
