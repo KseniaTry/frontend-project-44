@@ -8,4 +8,6 @@
 [![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=KseniaTry_frontend-project-44)
 
 
-Brain-even game: https://asciinema.org/a/UeCU3m30TWxSXvMHPTSX5ZOj5
+Brain-even game demo: https://asciinema.org/a/UeCU3m30TWxSXvMHPTSX5ZOj5
+
+Brain-calc game demo: https://asciinema.org/a/wQac9ezPtALiuKOS44Ll9kQcP
