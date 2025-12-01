@@ -26,9 +26,6 @@
     "brain-prime": "bin/brain-prime.js"
   },
   "dependencies": {
-    "brain-calc": "^1.0.0",
-    "brain-even": "^1.0.0",
-    "brain-gcd": "^1.0.0",
     "mathjs": "^15.1.0",
     "readline-sync": "^1.4.10"
   },
