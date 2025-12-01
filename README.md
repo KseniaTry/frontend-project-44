@@ -15,3 +15,5 @@ Brain-calc game demo: https://asciinema.org/a/wQac9ezPtALiuKOS44Ll9kQcP
 Brain-gcd game demo: https://asciinema.org/a/ORhXnWf3V3RqUmJ5S73nkKP5m
 
 Brain-progression game demo: https://asciinema.org/a/rCt0iZTxFCnzF4luSYSpks6HY
+
+Brain-prime game demo: https://asciinema.org/a/Iz8Db7BZOUoCPts4XYvaq3u3f
