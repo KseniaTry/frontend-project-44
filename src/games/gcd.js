@@ -1,5 +1,5 @@
 import initGame from '../index.js'
-import { initGreeting } from '../cli.js'
+import initGreeting from '../cli.js'
 import { getRandomInRange } from '../util.js'
 import { MIN_RANDOM, MAX_RANDOM } from '../const.js'
 
@@ -19,9 +19,9 @@ const answerCheck = (expression) => {
 }
 
 const run = () => {
-  initGreeting()
+  const userName = initGreeting()
   console.log('Find the greatest common divisor of given numbers.')
-  initGame(getExpression, answerCheck)
+  initGame(getExpression, answerCheck, userName)
 }
 
 export default run

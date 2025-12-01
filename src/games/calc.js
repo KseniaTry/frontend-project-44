@@ -1,5 +1,5 @@
 import initGame from '../index.js'
-import { initGreeting } from '../cli.js'
+import initGreeting from '../cli.js'
 import { create, all } from 'mathjs'
 import { getRandomInRange } from '../util.js'
 import { MIN_RANDOM, MAX_RANDOM } from '../const.js'
@@ -22,9 +22,9 @@ const getRandomExpression = () => {
 const answerCheck = expression => math.evaluate(expression)
 
 const run = () => {
-  initGreeting()
+  const userName = initGreeting()
   console.log('What is the result of the expression?')
-  initGame(getRandomExpression, answerCheck)
+  initGame(getRandomExpression, answerCheck, userName)
 }
 
 export default run

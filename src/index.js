@@ -1,8 +1,7 @@
 import readlineSync from 'readline-sync'
-import { name } from '../src/cli.js'
 import { QUESTIONS_COUNT } from './const.js'
 
-const initGame = (getExpression, answerCheck) => {
+const initGame = (getExpression, answerCheck, userName) => {
   for (let i = 1; i <= QUESTIONS_COUNT; i += 1) {
     const expression = getExpression()
     console.log(`Question: ${expression}`)
@@ -12,11 +11,11 @@ const initGame = (getExpression, answerCheck) => {
     if (userAnswer == correctAnswer) {
       console.log('Correct!')
       if (i === QUESTIONS_COUNT) {
-        console.log(`Congratulations, ${name}!`)
+        console.log(`Congratulations, ${userName}!`)
       }
     }
     else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${name}!`)
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${userName}!`)
       break
     }
   }

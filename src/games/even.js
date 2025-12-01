@@ -1,5 +1,5 @@
 import initGame from '../index.js'
-import { initGreeting } from '../cli.js'
+import initGreeting from '../cli.js'
 import { getRandomInRange } from '../util.js'
 import { MIN_RANDOM, MAX_RANDOM } from '../const.js'
 
@@ -10,9 +10,9 @@ const answerCheck = expression => isNumberEven(expression) ? 'yes' : 'no'
 const getExpression = () => getRandomInRange(MIN_RANDOM, MAX_RANDOM)
 
 const run = () => {
-  initGreeting()
+  const userName = initGreeting()
   console.log('Answer "yes" if the number is even, otherwise answer "no".')
-  initGame(getExpression, answerCheck)
+  initGame(getExpression, answerCheck, userName)
 }
 
 export default run

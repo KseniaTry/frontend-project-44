@@ -1,5 +1,5 @@
 import initGame from '../index.js'
-import { initGreeting } from '../cli.js'
+import initGreeting from '../cli.js'
 import { getRandomInRange } from '../util.js'
 import { MIN_RANDOM, MAX_RANDOM } from '../const.js'
 
@@ -26,9 +26,9 @@ const answerCheck = (expression) => {
 }
 
 const run = () => {
-  initGreeting()
+  const userName = initGreeting()
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
-  initGame(getExpression, answerCheck)
+  initGame(getExpression, answerCheck, userName)
 }
 
 export default run

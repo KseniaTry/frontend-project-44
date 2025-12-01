@@ -1,5 +1,5 @@
 import initGame from '../index.js'
-import { initGreeting } from '../cli.js'
+import initGreeting from '../cli.js'
 import { getRandomInRange } from '../util.js'
 import { MIN_RANDOM, MAX_RANDOM, MIN_PROGRESSION_STEP, MAX_PROGRESSION_STEP, MIN_PROGRESSION_EL_COUNT, MAX_PROGRESSION_EL_COUNT } from '../const.js'
 
@@ -42,9 +42,9 @@ const answerCheck = (expression) => {
 }
 
 const run = () => {
-  initGreeting()
+  const userName = initGreeting()
   console.log('What number is missing in the progression?')
-  initGame(getExpression, answerCheck)
+  initGame(getExpression, answerCheck, userName)
 }
 
 export default run
