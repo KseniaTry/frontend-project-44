@@ -13,8 +13,8 @@ const getRandomOperation = () => {
 }
 
 const getRandomExpression = () => {
-  const firstElement = getRandomInRange(MIN_RANDOM, MAX_RANDOM)
-  const secondElement = getRandomInRange(MIN_RANDOM, MAX_RANDOM)
+  const firstElement = getRandomInRange(MIN_RANDOM, MAX_RANDOM).toString()
+  const secondElement = getRandomInRange(MIN_RANDOM, MAX_RANDOM).toString()
   const operation = getRandomOperation()
   return `${firstElement} ${operation} ${secondElement}`
 }
@@ -23,7 +23,7 @@ const checkAnswer = expression => math.evaluate(expression)
 
 const run = () => {
   const userName = initGreeting()
-  // console.log('What is the result of the expression?')
+  console.log('What is the result of the expression?')
   initGame(getRandomExpression, checkAnswer, userName)
 }
 
