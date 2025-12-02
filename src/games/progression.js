@@ -4,16 +4,16 @@ import { getRandomInRange } from '../util.js'
 import { MIN_RANDOM, MAX_RANDOM, MIN_PROGRESSION_STEP, MAX_PROGRESSION_STEP, MIN_PROGRESSION_EL_COUNT, MAX_PROGRESSION_EL_COUNT } from '../const.js'
 
 const getExpression = () => {
-  const start = getRandomInRange(MIN_RANDOM, MAX_RANDOM)
+  const firstElement = getRandomInRange(MIN_RANDOM, MAX_RANDOM)
   const step = getRandomInRange(MIN_PROGRESSION_STEP, MAX_PROGRESSION_STEP)
   const elementsCount = getRandomInRange(MIN_PROGRESSION_EL_COUNT, MAX_PROGRESSION_EL_COUNT)
-  const missed = getRandomInRange(1, elementsCount) - 1
-  let result = [start]
+  const missedElement = getRandomInRange(1, elementsCount) - 1
+  let result = [firstElement]
   for (let i = 1; i <= elementsCount; i += 1) {
     let number = result.at(-1) + step
     result.push(number)
   }
-  result[missed] = '..'
+  result[missedElement] = '..'
   return result.join(' ')
 }
 
@@ -25,7 +25,7 @@ const getStepOfProgression = (array) => {
   }
 }
 
-const answerCheck = (expression) => {
+const checkAnswer = (expression) => {
   const elements = expression.split(' ')
   const missedElementIndex = elements.indexOf('..')
   const step = getStepOfProgression(elements)
@@ -44,7 +44,7 @@ const answerCheck = (expression) => {
 const run = () => {
   const userName = initGreeting()
   console.log('What number is missing in the progression?')
-  initGame(getExpression, answerCheck, userName)
+  initGame(getExpression, checkAnswer, userName)
 }
 
 export default run

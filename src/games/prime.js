@@ -5,7 +5,7 @@ import { MIN_RANDOM, MAX_RANDOM } from '../const.js'
 
 const getExpression = () => getRandomInRange(MIN_RANDOM, MAX_RANDOM)
 
-const answerCheck = (expression) => {
+const checkAnswer = (expression) => {
   if (expression < 2) {
     return 'no'
   }
@@ -28,7 +28,7 @@ const answerCheck = (expression) => {
 const run = () => {
   const userName = initGreeting()
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
-  initGame(getExpression, answerCheck, userName)
+  initGame(getExpression, checkAnswer, userName)
 }
 
 export default run
