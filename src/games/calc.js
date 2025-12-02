@@ -13,10 +13,10 @@ const getRandomOperation = () => {
 }
 
 const getRandomExpression = () => {
-  const firstElement = getRandomInRange(MIN_RANDOM, MAX_RANDOM)
-  const secondElement = getRandomInRange(MIN_RANDOM, MAX_RANDOM)
+  const first = getRandomInRange(MIN_RANDOM, MAX_RANDOM)
+  const second = getRandomInRange(MIN_RANDOM, MAX_RANDOM)
   const operation = getRandomOperation()
-  return `${firstElement} ${operation} ${secondElement}`
+  return `${first} ${operation} ${second}`
 }
 
 const checkAnswer = expression => math.evaluate(expression)
