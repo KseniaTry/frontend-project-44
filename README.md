@@ -20,12 +20,12 @@ Brain-progression game demo: https://asciinema.org/a/rCt0iZTxFCnzF4luSYSpks6HY
 Brain-prime game demo: https://asciinema.org/a/Iz8Db7BZOUoCPts4XYvaq3u3f
 
 Инструкция по установке:
-make install                установка пакета
+make install - установка пакета
 
-make brain-games            запуск приветствия
+make brain-games - запуск приветствия
 
-make brain-even             запуск игры brain-even
-make brain-calc             запуск игры brain-calc
-make brain-gcd              запуск игры brain-gcd
-make brain-progression      запуск игры brain-progression
-make brain-prime            запуск игры brain-prime
+make brain-even - запуск игры brain-even
+make brain-calc - запуск игры brain-calc
+make brain-gcd - запуск игры brain-gcd
+make brain-progression - запуск игры brain-progression
+make brain-prime - запуск игры brain-prime
