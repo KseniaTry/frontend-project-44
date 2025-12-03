@@ -19,8 +19,8 @@ Brain-progression game demo: https://asciinema.org/a/rCt0iZTxFCnzF4luSYSpks6HY
 5. В игре brain-prime необходимо определить простое число или нет
 Brain-prime game demo: https://asciinema.org/a/Iz8Db7BZOUoCPts4XYvaq3u3f
 
-Инструкция по установке:
-make install - установка пакета  
+Инструкция по установке:    
+make install - установка пакета    
 
 make brain-games - запуск приветствия  
 
