@@ -4,7 +4,8 @@ import { QUESTIONS_COUNT } from './const.js'
 const initGame = (getExpression, answerCheck, userName) => {
   for (let i = 1; i <= QUESTIONS_COUNT; i += 1) {
     const expression = getExpression()
-    console.log(`Question: ${expression}`)
+    const question = `Question: ${expression}`
+    console.log(question)
     const userAnswer = readlineSync.question('Your answer: ')
     const correctAnswer = answerCheck(expression)
 
