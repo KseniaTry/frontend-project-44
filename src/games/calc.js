@@ -24,7 +24,8 @@ const checkAnswer = expression => math.evaluate(expression)
 const run = () => {
   const userName = initGreeting()
   console.log('What is the result of the expression?')
-  initGame(getRandomExpression, checkAnswer, userName)
+  const expression = getRandomExpression()
+  initGame(expression, checkAnswer, userName)
 }
 
 export default run
