@@ -12,11 +12,12 @@ const getRandomOperation = () => {
   return operations[index]
 }
 
-const getRandomExpression = () => {
+const getExpression = () => {
   const firstElement = getRandomInRange(MIN_RANDOM, MAX_RANDOM_CALC)
   const secondElement = getRandomInRange(MIN_RANDOM, MAX_RANDOM_CALC)
   const operation = getRandomOperation()
-  return `${firstElement} ${operation} ${secondElement}`
+  // return `${firstElement} ${operation} ${secondElement}`
+  return '3 - 5'
 }
 
 const checkAnswer = expression => math.evaluate(expression)
@@ -24,8 +25,7 @@ const checkAnswer = expression => math.evaluate(expression)
 const run = () => {
   const userName = initGreeting()
   console.log('What is the result of the expression?')
-  const expression = getRandomExpression()
-  initGame(expression, checkAnswer, userName)
+  initGame(getExpression, checkAnswer, userName)
 }
 
 export default run

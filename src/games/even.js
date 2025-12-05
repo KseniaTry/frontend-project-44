@@ -12,8 +12,7 @@ const checkAnswer = expression => isNumberEven(expression) ? 'yes' : 'no'
 const run = () => {
   const userName = initGreeting()
   console.log('Answer "yes" if the number is even, otherwise answer "no".')
-  const expression = getExpression()
-  initGame(expression, checkAnswer, userName)
+  initGame(getExpression, checkAnswer, userName)
 }
 
 export default run

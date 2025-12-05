@@ -9,6 +9,7 @@ const getExpression = () => {
   const elementsCount = getRandomInRange(MIN_PROGRESSION_EL_COUNT, MAX_PROGRESSION_EL_COUNT)
   const missedElement = getRandomInRange(1, elementsCount) - 1
   let result = [firstElement]
+
   for (let i = 1; i <= elementsCount; i += 1) {
     let number = result.at(-1) + step
     result.push(number)
