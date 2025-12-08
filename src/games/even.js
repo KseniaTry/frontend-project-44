@@ -1,4 +1,4 @@
-import initGame from '../index.js'
+import { initGame } from '../index.js'
 import initGreeting from '../cli.js'
 import { getRandomInRange } from '../util.js'
 import { MIN_RANDOM, MAX_RANDOM } from '../const.js'
