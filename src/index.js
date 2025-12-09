@@ -21,16 +21,4 @@ const initGame = (getExpression, answerCheck, userName) => {
   }
 }
 
-const initGame2 = (correctAnswer, question, userName) => {
-  console.log(question)
-  const userAnswer = readlineSync.question('Your answer: ')
-
-  if (userAnswer == correctAnswer) {
-    return 'Correct!'
-  }
-  else {
-    return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${userName}!`
-  }
-}
-
-export { initGame, initGame2 }
+export default initGame
