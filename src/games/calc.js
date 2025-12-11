@@ -16,8 +16,7 @@ const getExpression = () => {
   const firstElement = getRandomInRange(MIN_RANDOM, MAX_RANDOM_CALC)
   const secondElement = getRandomInRange(MIN_RANDOM, MAX_RANDOM_CALC)
   const operation = getRandomOperation()
-  // return `${firstElement} ${operation} ${secondElement}`
-  return '3 - 5'
+  return `${firstElement} ${operation} ${secondElement}`
 }
 
 const checkAnswer = expression => math.evaluate(expression)
