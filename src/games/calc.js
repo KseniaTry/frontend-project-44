@@ -1,10 +1,7 @@
 import initGame from '../index.js'
 import initGreeting from '../cli.js'
-import { create, all } from 'mathjs'
 import { getRandomInRange } from '../util.js'
 import { MIN_RANDOM, MAX_RANDOM_CALC } from '../const.js'
-
-const math = create(all)
 
 const getRandomOperation = () => {
   const operations = ['+', '-', '*']
@@ -19,7 +16,26 @@ const getExpression = () => {
   return `${firstElement} ${operation} ${secondElement}`
 }
 
-const checkAnswer = expression => math.evaluate(expression)
+const checkAnswer = (expression) => {
+  const [number1, operation, number2] = expression.split(' ')
+  const firstElement = parseInt(number1)
+  const secondElement = parseInt(number2)
+  let result = 0
+
+  switch (operation) {
+    case '+':
+      result = firstElement + secondElement
+      break
+    case '-':
+      result = firstElement - secondElement
+      break
+    case '*':
+      result = firstElement * secondElement
+      break
+  }
+
+  return result
+}
 
 const run = () => {
   const userName = initGreeting()
